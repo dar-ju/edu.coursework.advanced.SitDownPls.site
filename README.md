@@ -2,14 +2,14 @@
 
 ![SitDownPls logo](http://_github-images.host1438437.hostland.pro/spl-logo.png)
 
-Online furniture store SitDownPls. Weblayout HTML, CSS. Gulp, SASS.
+Online furniture store SitDownPls. Weblayout HTML, CSS. Gulp, SCSS.
 
 4 adaptive pages with Perfect Pixel weblayout: main page, catalog, product, partnership.
 
 My coursework for the **"Weblayout. Advanced level"** Skillbox course.
 
 - Gulp toolkit
-- SASS
+- SCSS
 - adaptive
 - correct semantics
 - BEM methodology
