@@ -1,0 +1,25 @@
+<article class="category-card">
+  <div class="category-card__tags">
+    <a href="@@tag-link-1" class="submenu-link category-card__tag">@@tag-1</a>
+    <a href="@@tag-link-1" class="submenu-link category-card__tag">@@tag-2</a>
+  </div>
+  <div class="category-card__wrapper">
+    <h3 class="title cardtitle category-card__title">@@name</h3>
+    <a href="#" class="category-card__arrow-icon">
+      <svg width="20" height="20" viewbox="0 0 20 20">
+        <use class="arrow-icon" xlink:href="../sprite.svg#arrow"></use>
+      </svg>
+    </a>
+  </div>
+  <picture>
+    <source media="(max-width: 574px)" srcset="../images/category/@@foto-320">
+    <source media="(max-width: 1024px)" srcset="../images/category/@@foto-1024">
+    <img class="category-card__img" src="../images/category/@@foto" alt="@@name">
+  </picture>
+  <a class="to-catalog-link category-card__link" href="#">
+    В каталог
+    <svg width="21" height="21" viewbox="0 0 21 21">
+      <use class="arrow-icon" xlink:href="../sprite.svg#arrow2"></use>
+    </svg>
+  </a>
+</article>

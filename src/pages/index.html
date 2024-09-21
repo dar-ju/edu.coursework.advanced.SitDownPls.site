@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @@include('../components/head.html')
+</head>
+
+<body>
+  <header class="header header_padding section">
+    @@include('../components/header.html')
+  </header>
+  <main class="main">
+    @@include('../components/main/hero.html')
+    @@include('../components/main/special.html')
+    @@include('../components/catalog/product-list.html', {
+    "title": "Высокий рейтинг"
+    })
+    @@include('../components/main/banner.html')
+    @@include('../components/main/top.html')
+    @@include('../components/main/usefull.html')
+    @@include('../components/main/contact.html')
+  </main>
+  @@include('../components/footer.html')
+</body>
+
+</html>

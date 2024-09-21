@@ -1,0 +1,27 @@
+<section class="contact section">
+  <div class="container contact__container">
+    <div class="contact__wrapper">
+      <h2 class="title contact__title">Мы всегда вам рады!</h2>
+      <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+        <label class="form__descr">Безусловно, новая модель организационной деятельности в значительной степени
+          обусловливает важность распределения
+          внутренних резервов и ресурсов.</label>
+        <div class="form__input-block">
+          <input class="input-field form__input" type="text" name="name" placeholder="Как вас зовут?">
+          <input class="input-field form__input" type="tel" name="phone" placeholder="Ваш телефон">
+          <input class="input-field form__input" type="email" name="email" placeholder="Ваш e-mail">
+        </div>
+        <button class="btn-reset btn btn-main form__btn">Отправить</button>
+        <label for="agr" class="form__agree">
+          <input type="checkbox" class="form__agree-input" id="agr" name="agr" value="yes">
+          <span class="form__agree-text">Принимаю <a href="#" class="form__link">пользовательское соглашение</a></span>
+        </label>
+      </form>
+    </div>
+    <picture class="contact__img">
+      <source media="(max-width: 768px)" srcset="./images/decor/contact-768.png">
+      <source media="(max-width: 1024px)" srcset="./images/decor/contact-1024.png">
+      <img src="./images/decor/contact.png" alt="" aria-hidden="true">
+    </picture>
+  </div>
+</section>

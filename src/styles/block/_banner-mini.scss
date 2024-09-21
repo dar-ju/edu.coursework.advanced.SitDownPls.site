@@ -1,0 +1,36 @@
+@import '_variables.scss';
+
+.banner-mini {
+  background-color: $bckg_grey_dark;
+  border-radius: 10px;
+  overflow: hidden;
+  &__wrapper {
+    max-width: 260px;
+    padding: 28px;
+  }
+  &__title {
+    margin: 0;
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    color: $text_gold;
+  }
+  &__descr {
+    margin-bottom: 10px;
+    line-height: 23px;
+    color: $text_grey;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__link {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner-mini {
+    display: none;
+  }
+}

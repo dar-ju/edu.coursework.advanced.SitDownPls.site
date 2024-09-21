@@ -1,0 +1,106 @@
+@import '_variables.scss';
+
+.contact {
+  position: relative;
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  &__img {
+    align-self: center;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  max-width: 624px;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 19px;
+  &__descr {
+    margin-bottom: 16px;
+  }
+  &__input-block {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__input {
+    padding: 18px 18px;
+    background-color: $bckg_grey_lite;
+    font-size: 16px;
+    color: $text_grey;
+    border-radius: 10px;
+    &:active {
+      outline: 1px solid #B8EC64;
+    }
+  }
+  &__btn {
+    padding: 17px 34px;
+    margin-bottom: 12px;
+    align-self: flex-start;
+  }
+  &__agree-input {
+    margin-right: 5px;
+    cursor: pointer;
+    &:focus {
+      outline: 2px solid #7033AC;
+    }
+  }
+  &__link {
+    color: $text_violet;
+    text-decoration: underline;
+    &:focus {
+      color: #7033AC;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .form {
+    &__descr {
+      max-width: 405px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    &__img {
+      width: 188px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .contact {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    &__container {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    &__title {
+      margin-bottom: 4px;
+      font-size: 24px;
+    }
+    &__img {
+      display: none;
+    }
+  }
+
+  .form {
+    &__agree-text {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import '_variables.scss';
+
+@mixin discount-lable {
+  position: absolute;
+  width: 92px;
+  padding: 9px;
+  padding-right: 18px;
+  top: 30px;
+  text-align: center;
+  background-image: url("../images/decor/discount-lable.svg");
+  background-repeat: no-repeat;
+  font-weight: 700;
+  color: $text_white;
+
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+}
+
+@mixin star-lable {
+  width: 92px;
+  padding-left: 22px;
+  top: 32px;
+  left: 30px;
+  background-image: url("../images/decor/star.svg");
+  background-repeat: no-repeat;
+  font-weight: 700;
+  color: $text_orange;
+
+  @media (max-width: 576px) {
+    padding-left: 20px;
+    margin-bottom: 14px;
+    top: 17px;
+    left: 15px;
+    font-size: 12px;
+    background-size: 14px;
+  }
+}

@@ -1,0 +1,300 @@
+@import '_variables.scss';
+
+.product {
+  &__breadcumbs {
+    margin-bottom: 47px;
+  }
+  &__grid {
+    display: grid;
+    margin-bottom: 74px;
+    grid-template-columns: .5fr .5fr;
+    column-gap: 32px;
+    row-gap: 109px;
+    align-items: center;
+  }
+  &__main-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+  &__main-img {
+    width: 100%;
+  }
+  &__star-lable {
+    top: 0;
+    left: 0;
+  }
+  &__title {
+    margin-bottom: 4px;
+    font-size: 24px;
+  }
+  &__mini-descr {
+    margin-bottom: 18px;
+    font-size: 14px;
+    color: $text_grey;
+  }
+  &__price {
+    margin-bottom: 21px;
+    font-size: 36px;
+    line-height: 47px;
+  }
+  &__btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 230px;
+  }
+  &__btn {
+    max-width: 230px;
+    padding: 18px 17px;
+    margin-bottom: 14px;
+  }
+  &__add-to-cart {
+    text-align: center;
+    transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+    &:focus {
+      background-color: $bckg_violetLight;
+      outline: 1px solid $decor_violetMain;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  &__descr-wrapper {
+    :not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+  &__descr {
+    font-size: 14px;
+  }
+  &__specific {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
+  }
+  &__specific-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  &__specific-item {
+    font-size: 14px;
+    color: $text_grey;
+  }
+  &__specific-name {
+    position: relative;
+    padding-right: 5px;
+    margin-right: 10px;
+    z-index: 1;
+    background-color: $bckg_white;
+  }
+  &__secondary-group {
+    grid-column: 1 / span 1;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+  &__second-img {
+    width: 100%;
+  }
+  &__specific-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  &__specific-block {
+    position: relative;
+    width: 53%;
+    &::after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 2px;
+      border-bottom: 2px dotted $text_grey;
+    }
+  }
+  &__specific-value {
+    width: 50%;
+    align-self: flex-end;
+  }
+  &__similar {
+    margin-bottom: 34px;
+  }
+  &__similar-title {
+    margin-bottom: 23px;
+    font-size: 24px;
+  }
+  &__similar-group {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(213px, 296px));
+    gap: 29px 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .product {
+    &__breadcumbs {
+      margin-bottom: 39px;
+    }
+    &__grid {
+      margin-bottom: 62px;
+      grid-template-columns: minmax(275px, 515px) minmax(275px, 405px);
+      row-gap: 84px;
+    }
+    &__descr-block {
+      align-self: start;
+    }
+    &__specific-block {
+      width: 44%;
+    }
+    &__specific-value {
+      width: 54%;
+    }
+    &__similar {
+      margin-bottom: 34px;
+    }
+    &__similar-group {
+      grid-template-columns: repeat(3, minmax(213px, 296px));
+      gap: 29px 32px;
+    }
+    &__similar-invisible-1024 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    &__breadcumbs {
+      margin-bottom: 33px;
+    }
+    &__grid {
+      margin-bottom: 38px;
+      grid-template-columns: minmax(280px, 624px);
+      row-gap: 32px;
+    }
+    &__main-card {
+      padding-top: 54px;
+      padding-bottom: 47px;
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+    }
+    &__star-lable {
+      top: 50px;
+    }
+    &__specific {
+      grid-column: 1 / span 1;
+      grid-row: 5 / span 1;
+    }
+    &__descr-wrapper {
+      max-width: 515px;
+    }
+    &__specific-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+    &__specific-block {
+      min-width: 0;
+      width: 100%;
+    }
+    &__specific-value {
+      min-width: 216px;
+    }
+    &__secondary-group {
+      gap: 24px;
+    }
+    &__similar-group {
+      grid-template-columns: repeat(2, minmax(88px, 296px));
+    }
+    &__similar-invisible-768 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .product {
+    padding-top: 0;
+    &__grid {
+      padding-top: 7px;
+      margin-bottom: 70px;
+      grid-template-columns: minmax(200px, 704px);
+      row-gap: 15px;
+    }
+    &__title {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+    &__main-card {
+      padding: 0;
+      margin-bottom: 18px;
+    }
+    &__star-lable {
+      margin-bottom: 0;
+      top: 0;
+      font-size: 16px;
+    }
+    &__mini-descr {
+      width: 200px;
+      margin-bottom: 6px;
+      line-height: 14px;
+    }
+    &__price {
+      margin-bottom: 7px;
+      font-size: 24px;
+    }
+    &__btn-wrapper {
+      max-width: 100%;
+    }
+    &__btn {
+      max-width: 100%;
+    }
+    &__subtitle {
+      font-weight: 600;
+    }
+    &__descr-wrapper {
+      width: 100%;
+    }
+    &__descr-block {
+      margin-bottom: 13px;
+    }
+    &__secondary-group {
+      margin-bottom: 15px;
+      justify-content: space-between;
+      :not(:last-child) {
+        margin: 0;
+      }
+    }
+    &__specific-wrapper {
+      flex-direction: column;
+      gap: 0;
+    }
+    &__specific-list {
+      gap: 8px;
+    }
+    &__specific-block {
+      margin-bottom: 0;
+      &::after {
+        display: none;
+      }
+    }
+    &__specific-name {
+      font-size: 10px;
+      line-height: 14px;
+    }
+    &__specific-value {
+      align-self: flex-start;
+      color: $text_black;
+    }
+    &__similar-group {
+      grid-template-columns: repeat(2, minmax(88px, 704px));
+      gap: 16px;
+    }
+    &__similar {
+      margin-bottom: 37px;
+    }
+  }
+}

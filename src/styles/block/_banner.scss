@@ -1,0 +1,84 @@
+@import '_variables.scss';
+@import '_mixin.scss';
+
+.banner {
+  padding: 0;
+  margin-top: 35px;
+  &__block {
+    background-image: url("../images/banner/hero-banner-second.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &__wrapper {
+    max-width: 508px;
+    padding-top: 152px;
+    padding-bottom: 149px;
+  }
+  &__descr {
+  margin-bottom: 50px;
+  font-size: 48px;
+  line-height: 58px;
+  color: $text_white;
+  }
+  &__btn {
+    padding: 21px 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    margin-top: 0;
+    &__block {
+      background-image: url("../images/banner/hero-banner-second-1024.jpg");
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding-top: 35px;
+    &__container {
+      padding-left: 36px;
+    }
+    &__block {
+      background-image: url("../images/banner/hero-banner-second-768.jpg");
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    position: relative;
+    padding-top: 37px;
+    padding-bottom: 122px;
+    &__container {
+      padding: 0 12px;
+    }
+    &__block {
+      background-image: url("../images/banner/hero-banner-second-320.jpg");
+    }
+    &__wrapper {
+      max-width: 187px;
+      padding-top: 31px;
+      padding-bottom: 62px;
+    }
+    &__descr {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &__btn {
+      position: absolute;
+      max-width: 100%;
+      padding: 21px 86px;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .bannertitle {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}

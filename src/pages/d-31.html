@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @@include('../components/head.html')
+</head>
+
+<body>
+  <header class="header section">
+    @@include('../components/header.html')
+  </header>
+  <main class="main product container">
+    <ul class="list-reset breadcumbs product__breadcumbs">
+      <li class="breadcumbs__item"><a class="breadcumbs__link breadcumbs__main" href="../index.html">Главная</a></li>
+      @@loop('../components/catalog/breadcumbs.html', [
+      { "cumb": "Каталог", "url": "../catalog.html"},
+      { "cumb": "Диваны", "url": "#"},
+      { "cumb": "Прямые диваны", "url": "#"},
+      { "cumb": "D&#8209;31", "url": "", "active": "breadcumbs__active"}
+      ])
+    </ul>
+    <section class="product__grid">
+      <a href="#" tabindex="-1">
+        <picture>
+          <source media="(max-width: 320px)" srcset="./images/product/prod_sofa-D-31-big1-320.png">
+          <source media="(max-width: 768px)" srcset="./images/product/prod_sofa-D-31-big1.png">
+          <source media="(max-width: 1024px)" srcset="./images/product/prod_sofa-D-31-big1-1024.png">
+          <img class="product__main-img" src="./images/product/prod_sofa-D-31-big1.png"
+            alt="Диван тканевый прямой D-31">
+        </picture>
+      </a>
+      <div class="product__main-card">
+        <span class="star-lable product__star-lable">4,8</span>
+        <h1 class="title product__title">Диван тканевый прямой "D-31"</h1>
+        <span class="product__mini-descr">Мини 120 см без ящика Stark синий (Рогожка)</span>
+        <span class="product__price">28 490 руб</span>
+        <div class="product__btn-wrapper">
+          <button class="btn-reset btn product__btn">Купить в один клик</button>
+          <a href="#" class="product__add-to-cart">+ Добавить в корзину</a>
+        </div>
+      </div>
+      <div class="product__descr-block">
+        <h2 class="title product__subtitle">Опорный механизм</h2>
+        <div class="product__descr-wrapper">
+          <p class="descr product__descr">Опорный механизм напоминает пантограф, к которому добавили дополнительную
+            секцию. У
+            опорного
+            дивана сиденье
+            «выпрыгивает» вперёд и вытаскивает вторую часть спального места. Заключительный штрих — опустить спинку.</p>
+          <p class="descr product__descr">Этот механизм не портит пол и не боится ковров. Требуется чуть больше силы,
+            чтобы
+            разложить
+            диван, но подросток
+            справится.</p>
+        </div>
+      </div>
+      <div class="product__secondary-group">
+        <a href="#" tabindex="-1">
+          <picture>
+            <source media="(max-width: 320px)" srcset="./images/product/prod_sofa-D-31-big2-320.png">
+            <img class="product__second-img" src="./images/product/prod_sofa-D-31-big2.png" alt="" aria-hidden="true">
+          </picture>
+        </a>
+        <a href="#" tabindex="-1">
+          <picture>
+            <source media="(max-width: 320px)" srcset="./images/product/prod_sofa-D-31-big3-320.png">
+            <img class="product__second-img" src="./images/product/prod_sofa-D-31-big3.png" alt="" aria-hidden="true">
+          </picture>
+        </a>
+      </div>
+      <div class="product__specific">
+        <ul class="list-reset product__specific-list">
+          <li class="product__specific-item">
+            <div class="product__specific-wrapper">
+              <div class="product__specific-block">
+                <span class="product__specific-name">Гарантия</span>
+              </div>
+              <span class="product__specific-value">18 месяцев</span>
+            </div>
+          </li>
+          <li class="product__specific-item">
+            <div class="product__specific-wrapper">
+              <div class="product__specific-block">
+                <span class="product__specific-name">Артикул</span>
+              </div>
+              <span class="product__specific-value">AAA41269004</span>
+            </div>
+          </li>
+          <li class="product__specific-item">
+            <div class="product__specific-wrapper">
+              <div class="product__specific-block">
+                <span class="product__specific-name">Длина</span>
+              </div>
+              <span class="product__specific-value">163 см</span>
+            </div>
+          </li>
+          <li class="product__specific-item">
+            <div class="product__specific-wrapper">
+              <div class="product__specific-block">
+                <span class="product__specific-name">Высота</span>
+              </div>
+              <span class="product__specific-value">90 см</span>
+            </div>
+          </li>
+          <li class="product__specific-item">
+            <div class="product__specific-wrapper">
+              <div class="product__specific-block">
+                <span class="product__specific-name">Глубина</span>
+              </div>
+              <span class="product__specific-value">108 см</span>
+            </div>
+          </li>
+          <li class="product__specific-item">
+            <div class="product__specific-wrapper">
+              <div class="product__specific-block">
+                <span class="product__specific-name">Спальное место</span>
+              </div>
+              <span class="product__specific-value">200 см х 125 см</span>
+            </div>
+          </li>
+          <li class="product__specific-item">
+            <div class="product__specific-wrapper">
+              <div class="product__specific-block">
+                <span class="product__specific-name">Высота посадки</span>
+              </div>
+              <span class="product__specific-value">45 см</span>
+            </div>
+          </li>
+          <li class="product__specific-item">
+            <div class="product__specific-wrapper">
+              <div class="product__specific-block">
+                <span class="product__specific-name">Механизм</span>
+              </div>
+              <span class="product__specific-value">Опорный</span>
+            </div>
+          </li>
+          <li class="product__specific-item">
+            <div class="product__specific-wrapper">
+              <div class="product__specific-block">
+                <span class="product__specific-name">Тип обивки</span>
+              </div>
+              <span class="product__specific-value">Рогожка</span>
+            </div>
+          </li>
+          <li class="product__specific-item">
+            <div class="product__specific-wrapper">
+              <div class="product__specific-block">
+                <span class="product__specific-name">Цвет</span>
+              </div>
+              <span class="product__specific-value">Синий</span>
+            </div>
+          </li>
+          <li class="product__specific-item">
+            <div class="product__specific-wrapper">
+              <span class="product__specific-block">
+                <span class="product__specific-name">Наполнитель</span>
+              </span>
+              <span class="product__specific-value">Независимый пружинный блок</span>
+            </div>
+          </li>
+          <li class="product__specific-item">
+            <div class="product__specific-wrapper">
+              <div class="product__specific-block">
+                <span class="product__specific-name">Материал каркаса</span>
+              </div>
+              <span class="product__specific-value">Металл. рама с дерев. латами</span>
+            </div>
+          </li>
+          <li class="product__specific-item">
+            <div class="product__specific-wrapper">
+              <div class="product__specific-block">
+                <span class="product__specific-name">Количество мест</span>
+              </div>
+              <span class="product__specific-value">Двухместные</span>
+            </div>
+          </li>
+          <li class="product__specific-item">
+            <div class="product__specific-wrapper">
+              <div class="product__specific-block">
+                <span class="product__specific-name">Категория</span>
+              </div>
+              <span class="product__specific-value">Прямые тканевые диваны</span>
+            </div>
+          </li>
+          <li class="product__specific-item">
+            <div class="product__specific-wrapper">
+              <div class="product__specific-block">
+                <span class="product__specific-name">Возврат</span>
+              </div>
+              <span class="product__specific-value">Условия</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="product__similar">
+      <h2 class="title product__similar-title">Похожие товары</h2>
+      <ul class="list-reset product__similar-group">
+        <li>
+          @@include('../components/cards/product-card.html', {
+          "star": "4,5",
+          "foto": "prod_sofa-R-85.png",
+          "name": "Диван велюровый &#34;R&#8209;85&#34;",
+          "link": "#",
+          "price": "34 990"
+          })
+        </li>
+        <li>
+          @@include('../components/cards/product-card.html', {
+          "star": "4,6",
+          "foto": "prod_sofa-H-58.png",
+          "name": "Диван флоковый &#34;H&#8209;58&#34;",
+          "link": "#",
+          "price": "23 990"
+          })
+        </li>
+        <li class="product__similar-invisible-768">
+          @@include('../components/cards/product-card.html', {
+          "star": "4,5",
+          "foto": "prod_sofa-S-44.png",
+          "name": "Диван велюровый &#34;S&#8209;44&#34;",
+          "link": "#",
+          "price": "19 990"
+          })
+        </li>
+        <li class="product__similar-invisible-1024">
+          @@include('../components/cards/product-card.html', {
+          "star": "4,8",
+          "foto": "prod_sofa-V-43.png",
+          "name": "Диван шиниловый &#34;V&#8209;43&#34;",
+          "link": "#",
+          "price": "19 990"
+          })
+        </li>
+      </ul>
+    </section>
+  </main>
+  @@include('../components/footer.html')
+</body>
+
+</html>

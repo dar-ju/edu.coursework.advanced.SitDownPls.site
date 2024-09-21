@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @@include('../components/head.html')
+</head>
+
+<body>
+  <header class="header section">
+    @@include('../components/header.html')
+  </header>
+  <main class="main catalog section">
+    <div class="container catalog__container">
+      <ul class="list-reset breadcumbs">
+        <li class="breadcumbs__item">
+          <a class="breadcumbs__link breadcumbs__main" href="../index.html">Главная</a>
+        </li>
+        @@loop('../components/catalog/breadcumbs.html', [
+        { "cumb": "Каталог", "url": "../catalog.html"},
+        { "cumb": "Диваны", "url": "#"},
+        { "cumb": "Прямые диваны", "url": "", "active": "breadcumbs__active"}
+        ])
+      </ul>
+      <h1 class="title catalog__title catalog__title_media">Каталог</h1>
+      <div class="catalog__group">
+        <section class="catalog__widget">
+          @@include('../components/catalog/filter.html')
+          @@include('../components/catalog/banner-mini.html')
+        </section>
+        <section class="product-list catalog__section">
+          <div class="container product-list__container catalog__block">
+            <h2 class="title catalog__title">Каталог</h2>
+            <ul class="list-reset product-list__group catalog__grid catalog__grid_full">
+              <li>
+                @@include('../components/cards/product-card.html', {
+                "star": "5,0",
+                "foto": "prod_sofa-R-94.png",
+                "name": "Диван кожаный &#34;R&#8209;94&#34;",
+                "link": "#",
+                "price": "94 990"
+                })
+              </li>
+              <li>
+                @@include('../components/cards/product-card.html', {
+                "star": "4,9",
+                "foto": "prod_sofa-T-75.png",
+                "name": "Диван апартековый &#34;T&#8209;75&#34;",
+                "link": "#",
+                "price": "69 990"
+                })
+              </li>
+              <li>
+                @@include('../components/cards/product-card.html', {
+                "star": "4,8",
+                "foto": "prod_sofa-D-31.png",
+                "name": "Диван тканевый &#34;D&#8209;31&#34;",
+                "link": "../d-31.html",
+                "price": "28 490"
+                })
+              </li>
+              <li>
+                @@include('../components/cards/product-card.html', {
+                "star": "4,8",
+                "foto": "prod_sofa-Y-68.png",
+                "name": "Диван велюровый &#34;Y&#8209;68&#34;",
+                "link": "#",
+                "price": "22 990"
+                })
+              </li>
+
+              <li>
+                @@include('../components/cards/product-card.html', {
+                "star": "4,8",
+                "foto": "prod_sofa-W-95.png",
+                "name": "Диван из шинила &#34;W&#8209;95&#34;",
+                "link": "#",
+                "price": "22 990"
+                })
+              </li>
+              <li>
+                @@include('../components/cards/product-card.html', {
+                "star": "4,8",
+                "foto": "prod_sofa-G-41.png",
+                "name": "Диван флоковый &#34;G&#8209;41&#34;",
+                "link": "#",
+                "price": "17 990"
+                })
+              </li>
+              <li>
+                @@include('../components/cards/product-card.html', {
+                "star": "4,8",
+                "foto": "prod_sofa-V-43.png",
+                "name": "Диван шиниловый &#34;V&#8209;43&#34;",
+                "link": "#",
+                "price": "19 990"
+                })
+              </li>
+              <li>
+                @@include('../components/cards/product-card.html', {
+                "star": "4,7",
+                "foto": "prod_sofa-S-99.png",
+                "name": "Диван велюровый &#34;S&#8209;99&#34;",
+                "link": "#",
+                "price": "19 990"
+                })
+              </li>
+              <li>
+                @@include('../components/cards/product-card.html', {
+                "star": "4,7",
+                "foto": "prod_sofa-F-85.png",
+                "name": "Диван из кожзама &#34;F&#8209;85&#34;",
+                "link": "#",
+                "price": "26 990"
+                })
+              </li>
+            </ul>
+            <ul class="list-reset product-list__group catalog__grid catalog__grid_768">
+              <li>
+                @@include('../components/cards/product-card.html', {
+                "star": "5,0",
+                "foto": "prod_sofa-R-94.png",
+                "name": "Диван кожаный &#34;R&#8209;94&#34;",
+                "link": "#",
+                "price": "94 990"
+                })
+              </li>
+              <li>
+                @@include('../components/cards/product-card.html', {
+                "star": "4,9",
+                "foto": "prod_sofa-T-75.png",
+                "name": "Диван апартековый &#34;T&#8209;75&#34;",
+                "link": "#",
+                "price": "69 990"
+                })
+              </li>
+              <li>
+                @@include('../components/cards/product-card.html', {
+                "star": "4,8",
+                "foto": "prod_sofa-Y-68.png",
+                "name": "Диван велюровый &#34;Y&#8209;68&#34;",
+                "link": "#",
+                "price": "22 990"
+                })
+              </li>
+              <li class="product-list__D31">
+                @@include('../components/cards/product-card.html', {
+                "star": "4,8",
+                "foto": "prod_sofa-D-31.png",
+                "name": "Диван тканевый &#34;D&#8209;31&#34;",
+                "link": "#",
+                "price": "28 490",
+                "link": "../d-31.html"
+                })
+              </li>
+              <li>
+                @@include('../components/cards/product-card.html', {
+                "star": "4,8",
+                "foto": "prod_sofa-W-95.png",
+                "name": "Диван из шинила &#34;W&#8209;95&#34;",
+                "link": "#",
+                "price": "22 990"
+                })
+              </li>
+              <li>
+                @@include('../components/cards/product-card.html', {
+                "star": "4,8",
+                "foto": "prod_sofa-G-41.png",
+                "name": "Диван флоковый &#34;G&#8209;41&#34;",
+                "link": "#",
+                "price": "17 990"
+                })
+              </li>
+            </ul>
+            <ul class="list-reset catalog__pages">
+              <li class="catalog__page-item catalog__page-item_1">
+                <a class="catalog__page-number catalog__page-number_active" href="#">1</a>
+              </li>
+              <li class="catalog__page-item catalog__page-item_2">
+                <a class="catalog__page-number catalog__page-number_inactive" href="#">2</a>
+              </li>
+              <li class="catalog__page-item catalog__page-item_3">
+                <a class="catalog__page-number catalog__page-number_inactive" href="#">3</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  @@include('../components/footer.html')
+</body>
+
+</html>

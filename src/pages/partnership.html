@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @@include('../components/head.html')
+</head>
+
+<body>
+  <header class="header section">
+    @@include('../components/header.html')
+  </header>
+  <main class="main partnership container">
+    <ul class="list-reset breadcumbs partnership__breadcumbs">
+      <li class="breadcumbs__item"><a class="breadcumbs__link breadcumbs__main" href="../index.html">Главная</a></li>
+      @@loop('../components/catalog/breadcumbs.html', [
+      { "cumb": "Сотрудничество", "url": "", "active": "breadcumbs__active"}
+      ])
+    </ul>
+    <section class="partnership__block">
+      <h1 class="title partnership__title">Сотрудничество</h1>
+      <div class="partnership__to-shippers partnership__section" id="to-shippers">
+        <h2 class="subtitle partnership__subtitle">Поставщикам</h2>
+        <p class="descr partnership__descr">При планировании обстановки торгового помещения важно обустроить его
+          с&nbsp;комфортом для покупателей: грамотно зонировать, обеспечить эффективную демонстрацию и&nbsp;хранение
+          товаров в&nbsp;зале. Если вам необходимо комплексное оснащение, организация зоны отдыха или отдельные предметы
+          меблировки для поддержания эффективной торговой деятельности, мы&nbsp;поможем выбрать продукцию с&nbsp;учетом
+          нагрузки от&nbsp;поступающего трафика.</p>
+      </div>
+      <div class="partnership__what-get partnership__section" id="what-get">
+        <h2 class="subtitle partnership__subtitle">Что вы получаете?</h2>
+        <ul class="list-reset partnership__what-get-list">
+          <li>
+            <p class="descr partnership__descr partnership__descr_what-get partnership__descr_decor1">Мы&nbsp;ценим идеи
+              и&nbsp;вдохновение и&nbsp;предлагаем сотрудничество талантливым дизайнерам и&nbsp;архитекторам.
+              Выпускаемая нами продукция гармонично дополнит любой современный проект.</p>
+          </li>
+          <li>
+            <p class="descr partnership__descr partnership__descr_what-get partnership__descr_decor2">Комплексное
+              решение для красивого и функционального обустройства любых пространств.</p>
+          </li>
+          <li>
+            <p class="descr partnership__descr partnership__descr_what-get partnership__descr_decor3">
+              В&nbsp;ассортименте представлены все товарные группы для того, чтобы воссоздать обстановку
+              в&nbsp;помещениях разных типов: кабинетах, смешанных пространствах, Open Space, гостевых
+              и&nbsp;переговорных комнатах.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="partnership__advantages partnership__section" id="advantages">
+        <h2 class="subtitle partnership__subtitle partnership__possibility-title">Ваши преимущества от сотрудничества
+        </h2>
+        <ul class="list-reset">
+          <li>
+            <h3 class="descr partnership__possibility">Возможность 1:</h3>
+            <p class="descr partnership__descr partnership__descr-possibility">Создавайте незабываемые впечатления.
+              Красиво меблированная фотостудия не&nbsp;оставит клиентов равнодушными, а&nbsp;созданная интерьером
+              атмосфера будет надолго запечатлена на&nbsp;их&nbsp;снимках. Стильная и&nbsp;разноплановая обстановка
+              творческого пространства&nbsp;&mdash; ключевая составляющая его успешной деятельности. Позаботьтесь
+              о&nbsp;людях в&nbsp;кадре, а&nbsp;мы&nbsp;поможем правильно выбрать мебель.</p>
+          </li>
+          <li>
+            <h3 class="descr partnership__possibility">Возможность 2:</h3>
+            <p class="descr partnership__descr partnership__descr-possibility">Мы&nbsp;предлагаем застройщикам,
+              работающим на&nbsp;территории&nbsp;РФ, участие наших специалистов от&nbsp;этапа проектирования обстановки
+              квартир и&nbsp;подбора комплексных интерьерных решений до&nbsp;оптовых поставок мебели. Поможем
+              организовать демонстрационный зал с&nbsp;образцами изделий и&nbsp;материалов на&nbsp;площади нового
+              здания, чтобы покупатель заблаговременно подобрал тот вариант меблировки, который удовлетворит даже самые
+              взыскательные ожидания.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="partnership__warranty partnership__section">
+        <h2 class="subtitle partnership__subtitle">Гарантии</h2>
+        <ol class="partnership__warranty-list">
+          <li class="partnership__warranty-item">
+            <span class="partnership__warranty-descr">При приемке товара Покупатель должен внимательно проверить его
+              количество, качество и&nbsp;ассортимент на&nbsp;соответствие сопроводительным документам и&nbsp;заказу.
+              После подписания товарного чека Покупатель утрачивает право предъявления претензий, которые можно выявить
+              при приемке товара.</span>
+          </li>
+          <li class="partnership__warranty-item">
+            <span class="partnership__warranty-descr">На&nbsp;товары, сборка которых производилась покупателем
+              самостоятельно (не&nbsp;специалистами Продавца), гарантийные обязательства Продавца
+              не&nbsp;распространяются. Также гарантия не&nbsp;распространяется на&nbsp;повреждения товара, полученные
+              в&nbsp;ходе самостоятельной доставки и&nbsp;подъема товара. Покупатель не&nbsp;вправе отказаться
+              от&nbsp;товара надлежащего качества, имеющего индивидуально-определенные свойства, т.е. если товар может
+              быть использован исключительно приобретающим его потребителем.</span>
+          </li>
+          <li class="partnership__warranty-item">
+            <span class="partnership__warranty-descr">Возврат или обмен товара возможен при условии, что сохранена
+              упаковка, товарный вид и&nbsp;потребительские свойства товара, а&nbsp;также товарный и&nbsp;кассовый чеки.
+              В&nbsp;этом случае мы&nbsp;гарантируем вам возврат полной стоимости товара (за&nbsp;вычетом стоимости
+              доставки). В&nbsp;случае отказа от&nbsp;товара при доставке, клиент оплачивает услуги доставки.</span>
+          </li>
+        </ol>
+      </div>
+      <div class="partnership__period">
+        <span class="partnership__period-descr">Срок гарантии на&nbsp;нашу мебель составляет
+          от&nbsp;18&nbsp;до&nbsp;60&nbsp;месяцев</span>
+      </div>
+    </section>
+  </main>
+  @@include('../components/footer.html')
+</body>
+
+</html>

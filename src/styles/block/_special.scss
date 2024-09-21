@@ -1,0 +1,137 @@
+@import '_variables.scss';
+@import '_mixin.scss';
+
+.special {
+  padding-top: 70px;
+  &__media-visible-320 {
+    display: none;
+  }
+  &__title {
+    margin-bottom: 26px;
+  }
+  &__group {
+    display: grid;
+    grid-template-columns: minmax(240px, 296px) minmax(408px, 624px) minmax(240px, 296px);
+    gap: 32px;
+  }
+  &__lable {
+    @include discount-lable;
+  }
+  &__card {
+    display: flex;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $bckg_grey_lite;
+    border-radius: 10px;
+  }
+  &__picture {
+    display: flex;
+    min-height: 298px;
+    padding: 37px 37px 14px;
+    align-items: flex-end;
+    align-self: center;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__second-img {
+    width: 100%;
+  }
+  &__descr {
+    padding: 0 30px 27px;
+    &_big {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+  &__btn {
+    padding: 17px 33px;
+    background-color: transparent;
+    border: 2px solid $decor_violetMain;
+    color: $text_violet;
+  }
+  &__discount {
+    display: flex;
+    margin-bottom: 23px;
+    flex-wrap: wrap;
+    row-gap: 5px;
+  }
+  &__new-price {
+    margin-right: 26px;
+    font-size: 18px;
+    line-height: 23px;
+    color: $text_orange;
+  }
+
+  &__old-price {
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: line-through;
+  }
+}
+
+@media (max-width: 1024px) {
+  .special {
+    &__group {
+      grid-template-columns: repeat(3, minmax(213px, 296px));
+    }
+    &__card {
+      justify-content: space-between;
+    }
+    &__card_big {
+      .special__picture {
+        padding: 67px 15px 0px;
+        align-items: center;
+      }
+    }
+    &__second-link {
+      display: none;
+    }
+    &__new-price {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .special {
+    &__media-invisible-768 {
+      display: none;
+    }
+    &__group {
+      grid-template-columns: repeat(2, minmax(213px, 296px));
+      gap: 0;
+      column-gap: 32px;
+    }
+    &__invisible {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .special {
+    &__group {
+      grid-template-columns: minmax(213px, 1fr);
+      gap: 24px;
+    }
+    padding-top: 36px;
+    &__media-invisible-768 {
+      display: block;
+    }
+    &__media-visible-320 {
+      display: block;
+    }
+    &__container {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    &__title {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+}

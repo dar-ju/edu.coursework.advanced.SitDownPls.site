@@ -1,0 +1,38 @@
+@import '_variables.scss';
+
+.breadcumbs {
+  display: flex;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  &__link {
+    font-size: 14px;
+    color: $text_grey;
+    &:hover {
+      color: $text_violet;
+    }
+    &:focus {
+      background-color: $decor_violetLighter;
+    }
+    &:active {
+      color: $text_violetDark;
+    }
+  }
+  &__active {
+    color: $text_violetDark;
+  }
+  &__type {
+    color: $text_violetDark;
+  }
+}
+
+@media (max-width: 1024px) {
+  .breadcumbs {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .breadcumbs {
+    display: none;
+  }
+}

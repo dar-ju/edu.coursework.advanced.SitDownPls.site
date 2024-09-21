@@ -1,0 +1,134 @@
+@import '_variables.scss';
+
+.filter {
+  &__sections {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+  &__title {
+    display: inline-block;
+    margin-bottom: 19px;
+    font-size: 18px;
+    line-height: 24px;
+    color: $text_black;
+  }
+  &__name {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: $text_black;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    &_price {
+      margin: 0;
+    }
+  }
+  &__input {
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+    padding-left: 9px;
+    cursor: pointer;
+    border: 1px solid $decor_greyDark;
+    font-size: 11px;
+    line-height: 14px;
+    color: $text_greyDark;
+    &:focus {
+      outline: 1px solid $decor_violetMain;
+    }
+  }
+  &__label {
+    margin-right: 10px;
+    cursor: pointer;
+    vertical-align: text-top;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &_price {
+      display: flex;
+      flex-direction: initial;
+      gap: 0;
+    }
+  }
+}
+
+#filter__item-price-from, #filter__item-price-to {
+  width: 80px;
+  height: 27px;
+  border: 0;
+  outline: 1px solid $decor_greyDark;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+  &:hover {
+    outline: 1px solid $decor_violetMain;
+  }
+  &:focus {
+    background-color: $decor_violetLighter;
+  }
+  &:active {
+    outline: 1px solid $decor_violetDark;
+  }
+}
+
+@media (max-width: 1024px) {
+.filter {
+    &__title {
+      display: none;
+    }
+    &__sections {
+      display: flex;
+      gap: 27px;
+      flex-direction: row;
+    }
+    &__section {
+      min-width: 151px;
+    }
+    &__list {
+      gap: 11px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .filter {
+    &__sections {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    &__section {
+      min-width: 168px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .filter {
+    &__sections {
+      flex-wrap: wrap;
+      row-gap: 14px;
+      column-gap: 20px;
+    }
+    &__section {
+      min-width: 80px;
+    }
+    &__item {
+      padding-left: 3px;
+    }
+    &__label {
+      margin-right: 9px;
+    }
+    &__list {
+      gap: 11px;
+    }
+    &__input {
+      margin-right: 10px;
+    }
+    &__list_price {
+      gap: 0;
+    }
+  }
+}
