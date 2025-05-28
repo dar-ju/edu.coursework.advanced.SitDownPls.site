@@ -1,6 +1,6 @@
 # SitDownPls
 
-![SitDownPls logo](http://_github-images.host1438437.hostland.pro/spl-logo.png)
+![SitDownPls logo](http://sitdown.host1438437.hostland.pro/design/logo.svg)
 
 Online furniture store SitDownPls. Weblayout HTML, CSS. Gulp, SCSS.
 
@@ -40,6 +40,6 @@ Run in build mode
 
 `gulp`
 
-Screenshot of the main page:
+## Screenshot of the main page
 
-![SitDownPls screen](http://_github-images.host1438437.hostland.pro/spl-screen1.jpg)
+![SitDownPls screen](http://sitdown.host1438437.hostland.pro/design/Screenshot-SitDownPls.jpg)
